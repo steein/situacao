@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+    <head>
+     <title>SC TURISMO</title>
+     <link rel="stylesheet" type="text/css" href="Assets/CSS/estiloindex.css" />
+     <meta charset="UTF-8"/>
+    </head>
+    <style>
+    .mySlides {display:none;}
+    </style>
+    <body>
+        <div class="container">
+            <div class="containertitulo">
+                <div class="titulo">
+                   Sistemas para Internet
+                </div>
+                    <div class="image" style="max-width:100%">
+                    <img class="mySlides" src="Assets/Image/floripa.jpg"  width="100%" >
+                </div>
+
+                                                    <script>
+                                                        var myIndex = 0;
+                                                        carousel();
+                                                        function carousel() {
+                                                        var i;
+                                                        var x = document.getElementsByClassName("mySlides");
+                                                        for (i = 0; i < x.length; i++) {
+                                                           x[i].style.display = "none";  
+                                                        }
+                                                        myIndex++;
+                                                        if (myIndex > x.length) {myIndex = 1}    
+                                                        x[myIndex-1].style.display = "block";  
+                                                        setTimeout(carousel, 2000);
+                                                        }
+                                                    </script>
+                
+            <nav class="containermenu">
+                <ul class="menu">
+                   <button class="button" style="vertical-align:middle"><span><li><a href="index.html">Inicio</a></li></span></button>
+                    ||
+                    <button class="button" style="vertical-align:middle"><span><li><a href="locais.html">Locais</a></li></span></button>
+                    ||
+                    <button class="button" style="vertical-align:middle"><span><li><a href="rotas.html">Rotas</a></li></span></button>
+                    ||
+                    <button class="button" style="vertical-align:middle"><span><li><a href="dicas.html">Dicas</a></li></span></button>  
+                    ||
+                    <button class="button" style="vertical-align:middle"><span><li><a href="galeria.html">Galeria</a></li></span></button>
+                    ||
+                    <button class="button" style="vertical-align:middle"><span><li><a href="contato.html">Contato</a></li></span></button>
+                    
+                </ul>
+            </nav>
+        </div>
+    </body>
+</html>

@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>SC TURISMO - DICAS</title>
+        <link rel="stylesheet" type="text/css" href="Assets/CSS/estilopaginas.css" />
+         <meta charset="UTF-8"/>
+    </head>
+    <body>
+        <div class="container">
+            <div class="containertitulo">
+                <div class="titulo">
+                   Sistemas para Internet
+                </div>
+            </div>
+            <div class="image">
+            <img src="Assets/Image/floripa.jpg"  width="100%" >
+            </div>
+            <nav class="containermenu">
+                <ul class="menu">
+                   <button class="button" style="vertical-align:middle"><span><li><a href="index.html">Inicio</a></li></span></button>
+                    ||
+                    <button class="button" style="vertical-align:middle"><span><li><a href="locais.html">Locais</a></li></span></button>
+                    ||
+                    <button class="button" style="vertical-align:middle"><span><li><a href="rotas.html">Rotas</a></li></span></button>
+                    ||
+                    <button class="button" style="vertical-align:middle"><span><li><a href="dicas.html">Dicas</a></li></span></button>  
+                    ||
+                    <button class="button" style="vertical-align:middle"><span><li><a href="galeria.html">Galeria</a></li></span></button>
+                    ||
+                    <button class="button" style="vertical-align:middle"><span><li><a href="contato.html">Contato</a></li></span></button>
+                    
+                </ul>
+            </nav>
+        </div>
+        <div class="conteudo">
+            <div class="form">
+            <form action="scriptdic.php" method="POST">
+                <fieldset>
+                <legend> Deixe sua dica </legend>
+                <p>
+                    <label>Nome :</label>
+                        <input type="text" name="nome">
+                        <br>
+                        <br>
+                    <label>Região :</label>
+                        <input type="radio" name="regiao" value="Sul"> Sul
+                        <input type="radio" name="regiao" value="Sudeste"> Sudeste
+                        <input type="radio" name="regiao" value="Nordeste"> Nordeste
+                        <input type="radio" name="regiao" value="Norte"> Norte
+                        <input type="radio" name="regiao" value="Centro"> Centro-Oeste
+                        <br>
+                        <br>
+                    <label>Dica :</label>
+                        <textarea row="10" cols="40" name="dica" maxlength="550"></textarea>
+                        <br>
+                        <br>
+                </fieldset>
+                       <br>
+                    <input type="submit" name="enviar" value="Enviar">
+                    <input type="reset" name="limpar" value="Limpar">
+
+                </p>  
+            </form>
+            </div>
+        </div>
+    </body>
+</html>

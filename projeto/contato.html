@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>SC TURISMO - CONTATO</title>
+        <link rel="stylesheet" type="text/css" href="Assets/CSS/estilopaginas.css" />
+         <meta charset="UTF-8"/>
+    </head>
+    <body>
+        <div class="container">
+            <div class="containertitulo">
+                <div class="titulo">
+                   Sistemas para Internet
+                </div>
+            </div>
+            <div class="image">
+            <img src="Assets/Image/floripa.jpg"  width="100%" >
+            </div>
+            <nav class="containermenu">
+                <ul class="menu">
+                   <button class="button" style="vertical-align:middle"><span><li><a href="index.html">Inicio</a></li></span></button>
+                    ||
+                    <button class="button" style="vertical-align:middle"><span><li><a href="locais.html">Locais</a></li></span></button>
+                    ||
+                    <button class="button" style="vertical-align:middle"><span><li><a href="rotas.html">Rotas</a></li></span></button>
+                    ||
+                    <button class="button" style="vertical-align:middle"><span><li><a href="dicas.html">Dicas</a></li></span></button>  
+                    ||
+                    <button class="button" style="vertical-align:middle"><span><li><a href="galeria.html">Galeria</a></li></span></button>
+                    ||
+                    <button class="button" style="vertical-align:middle"><span><li><a href="contato.html">Contato</a></li></span></button>
+                    
+                </ul>
+            </nav>
+        </div>
+        <div class="conteudo">
+            <div class="form">
+            <form action="scriptcont.php" method="POST">
+                <fieldset>
+                <legend> Contato </legend>
+                <p>
+                    <label>Nome : </label>
+                        <input type="text" name="nome">
+                        <br>
+                        <br>
+                    <label>Sobrenome : </label>
+                        <input type="text" name="sobrenome">
+                        <br>
+                        <br>
+                    <label>E-mail : </label>
+                        <input type="text" name="email" >
+                        <br>
+                        <br>
+                    <label>Telefone : </label>
+                        <input type="text" name="telefone" />
+                        <br>
+                        <br>
+                        <br>
+                    <label>Interesse/Duvidas : </label>
+                        <textarea row="10" cols="40" name="duvida"></textarea>
+                        <br>
+                        <br>
+                </fieldset>
+                       <br>
+                    <input type="submit" name="enviar" value="Enviar">
+                    <input type="reset" name="limpar" value="Limpar">
+
+                </p>  
+            </form>
+            </div>
+        </div>
+    </body>
+</html>
